@@ -1,0 +1,184 @@
+{
+  "spots": [
+    {
+      "id": 1,
+      "name": "Quiet Study Table",
+      "location": "Room A",
+      "capacity": 1,
+      "type": "Silent Zone",
+      "price": 2,
+      "status": "available",
+      "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36"
+    },
+    {
+      "id": 2,
+      "name": "Focus Desk",
+      "location": "Room A",
+      "capacity": 1,
+      "type": "Quiet",
+      "price": 2,
+      "status": "limited",
+      "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+    },
+    {
+      "id": 3,
+      "name": "Group Study Room",
+      "location": "Room B",
+      "capacity": 6,
+      "type": "Group",
+      "price": 8,
+      "status": "available",
+      "image": "https://images.unsplash.com/photo-1497366216548-37526070297c"
+    },
+    {
+      "id": 4,
+      "name": "Library Corner",
+      "location": "Room C",
+      "capacity": 2,
+      "type": "Quiet",
+      "price": 3,
+      "status": "full",
+      "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+    },
+    {
+      "id": 5,
+      "name": "Window Desk",
+      "location": "Room C",
+      "capacity": 1,
+      "type": "Silent Zone",
+      "price": 2,
+      "status": "available",
+      "image": "https://images.unsplash.com/photo-1492724441997-5dc865305da7"
+    },
+    {
+      "id": 6,
+      "name": "Collaboration Room",
+      "location": "Room D",
+      "capacity": 8,
+      "type": "Group",
+      "price": 10,
+      "status": "limited",
+      "image": "https://images.unsplash.com/photo-1604328698692-f76ea9498e76"
+    },
+    {
+      "id": 7,
+      "name": "Solo Focus Pod",
+      "location": "Room E",
+      "capacity": 1,
+      "type": "Private",
+      "price": 4,
+      "status": "available",
+      "image": "https://images.unsplash.com/photo-1487014679447-9f8336841d58"
+    },
+    {
+      "id": 8,
+      "name": "Team Study Booth",
+      "location": "Room F",
+      "capacity": 4,
+      "type": "Group",
+      "price": 6,
+      "status": "available",
+      "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7"
+    },
+    {
+      "id": 9,
+      "name": "Garden Study Table",
+      "location": "Room G",
+      "capacity": 1,
+      "type": "Silent Zone",
+      "price": 2,
+      "status": "available",
+      "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174"
+    },
+    {
+      "id": 10,
+      "name": "Library Window Desk",
+      "location": "Room A",
+      "capacity": 1,
+      "type": "Quiet",
+      "price": 2,
+      "status": "limited",
+      "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72"
+    },
+    {
+      "id": 11,
+      "name": "Small Group Booth",
+      "location": "Room B",
+      "capacity": 4,
+      "type": "Group",
+      "price": 6,
+      "status": "available",
+      "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36"
+    },
+    {
+      "id": 12,
+      "name": "Focus Pod",
+      "location": "Room H",
+      "capacity": 1,
+      "type": "Private",
+      "price": 4,
+      "status": "available",
+      "image": "https://images.unsplash.com/photo-1487014679447-9f8336841d58"
+    },
+    {
+      "id": 13,
+      "name": "Team Collaboration Room",
+      "location": "Room D",
+      "capacity": 8,
+      "type": "Group",
+      "price": 10,
+      "status": "limited",
+      "image": "https://images.unsplash.com/photo-1604328698692-f76ea9498e76"
+    },
+    {
+      "id": 14,
+      "name": "Quiet Reading Table",
+      "location": "Room C",
+      "capacity": 2,
+      "type": "Silent Zone",
+      "price": 3,
+      "status": "available",
+      "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+    },
+    {
+      "id": 15,
+      "name": "Creative Study Corner",
+      "location": "Room I",
+      "capacity": 3,
+      "type": "Group",
+      "price": 5,
+      "status": "available",
+      "image": "https://images.unsplash.com/photo-1492724441997-5dc865305da7"
+    },
+    {
+      "id": 16,
+      "name": "Silent Focus Booth",
+      "location": "Room E",
+      "capacity": 1,
+      "type": "Private",
+      "price": 4,
+      "status": "full",
+      "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7"
+    },
+    {
+      "id": 17,
+      "name": "Meeting Study Room",
+      "location": "Room J",
+      "capacity": 6,
+      "type": "Group",
+      "price": 9,
+      "status": "limited",
+      "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+    },
+    {
+      "id": 18,
+      "name": "Solo Study Desk",
+      "location": "Room F",
+      "capacity": 1,
+      "type": "Quiet",
+      "price": 2,
+      "status": "available",
+      "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+    }
+  ]
+}
