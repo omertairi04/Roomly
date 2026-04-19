@@ -9,8 +9,9 @@ import {
     Box, Drawer
 } from "@mui/material";
 import React from "react";
+import {BookPanel} from "./BookPanel";
 
-const colors = {
+export const colors = {
     ink: "#1C1915",
     terracotta: "#C9622F",
     teal: "#2A6B6B",
@@ -126,21 +127,16 @@ export default function SpotCard({spot}: any) {
                                 open={openDrawer}
                                 onClose={() => setOpenDrawer(false)}
                             >
-                                <Box sx={{width: 320, p: 3}}>
-                                    <Typography variant="h6">Book this spot</Typography>
-
-                                    <Typography sx={{mt: 1}}>
-                                        Select your time slot
-                                    </Typography>
-
-                                    <Button
-                                        sx={{mt: 3}}
-                                        variant="contained"
-                                        onClick={() => setOpenDrawer(false)}
-                                    >
-                                        Confirm booking
-                                    </Button>
-                                </Box>
+                                <BookPanel title={spot.name}
+                                           location={spot.location}
+                                           capacity={spot.capacity}
+                                           type={spot.type}
+                                           price={spot.price}
+                                           image={spot.image}
+                                           otherImages={spot.otherImages}
+                                           description={spot.description}
+                                           status={spot.status}
+                                           closeDrawer={() => setOpenDrawer(false)}/>
                             </Drawer></>
                     )}
                 </Box>

@@ -16,7 +16,7 @@ const HomeContent: React.FC = () => {
     const [spots, setSpots] = useState<Spot[]>([]);
 
     useEffect(() => {
-        fetch("http://localhost:3001/spots")
+        fetch("http://localhost:4001/spots")
             .then((res) => res.json())
             .then((data) => setSpots(data));
     }, []);
@@ -24,8 +24,8 @@ const HomeContent: React.FC = () => {
     return (
         <Grid container spacing={3}>
             {spots.map((spot) => (
-                <Grid key={spot.id} size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
-                    <SpotCard spot={spot} />
+                <Grid key={spot.id} size={{xs: 12, sm: 6, md: 4, lg: 3}}>
+                    <SpotCard spot={spot}/>
                 </Grid>
             ))}
         </Grid>
