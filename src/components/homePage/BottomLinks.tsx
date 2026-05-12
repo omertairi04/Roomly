@@ -12,8 +12,6 @@ const styles: { [key: string]: React.CSSProperties } = {
     },
 
     bottomLink: {
-
-
         marginRight: '20px',
         color: '#007BFF',
         textDecoration: 'none',

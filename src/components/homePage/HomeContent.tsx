@@ -38,12 +38,18 @@ export interface Event {
 
 const API = "http://localhost:4001/api";
 
-const HomeContent: React.FC = () => {
-    const [tab, setTab] = useState(0);
-    const [events, setEvents] = useState<Event[]>([]);
-    const [venues, setVenues] = useState<Venue[]>([]);
+interface HomeContentProps {
+    defaultTab?: number;
+}
+
+const HomeContent: React.FC<HomeContentProps> = ({ defaultTab = 0 }) => {
+    const [tab, setTab]             = useState(defaultTab);
+    const [events, setEvents]       = useState<Event[]>([]);
+    const [venues, setVenues]       = useState<Venue[]>([]);
     const [companies, setCompanies] = useState<Company[]>([]);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading]     = useState(true);
+
+    useEffect(() => { setTab(defaultTab); }, [defaultTab]);
 
     useEffect(() => {
         Promise.all([
@@ -60,11 +66,8 @@ const HomeContent: React.FC = () => {
 
     return (
         <Box>
-            <Tabs
-                value={tab}
-                onChange={(_, v) => setTab(v)}
-                sx={{ mb: 3, borderBottom: "1px solid rgba(0,0,0,0.1)" }}
-            >
+            <Tabs value={tab} onChange={(_, v) => setTab(v)}
+                  sx={{ mb: 3, borderBottom: "1px solid rgba(0,0,0,0.1)" }}>
                 <Tab label={`Events (${events.length})`} />
                 <Tab label={`Venues (${venues.length})`} />
                 <Tab label={`Companies (${companies.length})`} />
@@ -83,7 +86,6 @@ const HomeContent: React.FC = () => {
                             ))}
                         </Grid>
                     )}
-
                     {tab === 1 && (
                         <Grid container spacing={3}>
                             {venues.map((venue) => (
@@ -93,7 +95,6 @@ const HomeContent: React.FC = () => {
                             ))}
                         </Grid>
                     )}
-
                     {tab === 2 && (
                         <Grid container spacing={3}>
                             {companies.map((company) => (
